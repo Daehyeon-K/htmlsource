@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 헤드에 바로 적는 방식 -->
+    <style>
+        #text{ color:pink; }
+        .area p{ color:green; }
+        p { color:red !important; }
+        p { color:blue; }
+
+
+    </style>
+    <!-- 첨부 방식 -->
+    <!--<link rel="stylesheet" href="mystyle.css">-->
+</head>
+<body>
+    <!--
+        스타일 우선순위
+
+        1. 명시도 점수가 높은 선언이 우선한다.
+           (!important(1000점) > 인라인(500점) > 아이디(100점) > 클래스(10점) > 태그(1점) > 전체 > 상속)
+        2. 점수가 같은 경우 가장 마지막에 해석되는 선언이 우선한다.
+        3. 명시도는 상속 규칙보다 우선한다.
+        4. !important가 적용된 선언 방식이 다른 모든 방식보다 우선한다.
+
+        .list li.item{ color:red; } 얘도 21점 아래처럼
+        .list li.hover{ color:red; } 이거나 위에나 거의 우선순위 비슷 태그1점에 .클래스 2개 21점
+        .box::before{} 요소 선택자는 태그 점수랑 같음 그다음 .box 클래스니까 11점
+        #submit span[] -> 아이디라 100점
+        :not(.box){} -> not은 점수 없어서 순위 못매김. 괄호 안에 것으로만. 클래스 선택자 10점
+        :not(h1){} 못매기니 태그 선택자 1점
+    -->
+    <!--
+        인라인 방식 <h1 style="color:blue">textttt<h1>
+    -->
+    <div class="area">
+        <p id="text" style="color:black">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At corrupti alias suscipit adipisci repudiandae quisquam, et fuga ipsum deleniti quibusdam neque libero debitis perspiciatis temporibus modi nihil pariatur amet harum.
+        </p>
+    </div>
+</body>
+</html>
