@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap{
+            position: relative; /*position:absolute의 부모 역할*/
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+        .box{
+            position:absolute;
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            border: 1px solid red;
+        }
+        #crd1{
+            top:0;
+            left:0;
+        }
+        #crd2{
+            top:0;
+            right:0;
+        }
+        #crd3{
+            bottom:0;
+            left:0;
+        }
+        #crd4{
+            bottom:0;
+            right:0;
+        }
+        #crd5{
+            top:100px;
+            left:100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- position : 배치 방법
+        1) static(기본) : 요소를 문서의 흐름에 맞게
+        2) relative : 문서 흐름 따라 위치 지정
+                    : top right bottom left 값이 필요하고, 기준값은 요소가 처음 배치된 자리
+        3) absolute : 원하는 위치에 배치 (부모 요소 필요 - relative 요소가 주소 부모가 됨)
+        4) fixed : 지정 위치에 고정해 배치 (화면에서 요소 잘릴 수도 있음)
+    -->
+    <div id="wrap">
+        <div class="box" id="crd1">crd1</div>
+        <div class="box" id="crd2">crd2</div>
+        <div class="box" id="crd3">crd3</div>
+        <div class="box" id="crd4">crd4</div>
+        <div class="box" id="crd5">crd5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            vertical-align: top;
+            
+        }
+        .box{
+            border: 1px solid black;
+            position: relative;
+        }
+        .a{
+            background-color: blue;
+            left: 50px;
+            top: 50px;
+        }
+        .b{
+            background-color: red;
+            left: 50px;
+            top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- position : 배치 방법
+        1) static(기본) : 요소를 문서의 흐름에 맞게
+        2) relative : 문서 흐름 따라 위치 지정
+                    : top right bottom left 값이 필요하고, 기준값은 요소가 처음 배치된 자리
+        3) absolute : 원하는 위치에 배치 (부모 요소 필요 - relative 요소가 주소 부모가 됨)
+        4) fixed : 지정 위치에 고정해 배치 (화면에서 요소 잘릴 수도 있음)
+    -->
+    <div class="box a"><img src="https://via.placeholder.com/100x120" alt="" /></div>
+    <div class="box b"><img src="https://via.placeholder.com/100x120" alt="" /></div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti illum enim saepe quam non accusamus hic, corporis, quisquam consectetur modi tenetur, officia laudantium. Aliquam non qui repudiandae optio voluptatibus a dolorum obcaecati consectetur eveniet, voluptas nostrum ipsa cum quis ullam necessitatibus dolore odio? Ab tempore nostrum eveniet minima totam, culpa dolor voluptatem repudiandae aspernatur possimus ullam ex inventore, harum tenetur obcaecati perspiciatis animi consequuntur reiciendis modi minus est laboriosam vero commodi! Fugit aliquam praesentium quam illum asperiores odio nostrum eligendi natus officia non repudiandae recusandae facilis saepe doloribus tenetur expedita eos, ab eum officiis. Rem soluta consequatur quae velit! Fugiat?
+    </p>
+</body>
+</html>
